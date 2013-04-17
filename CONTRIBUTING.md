@@ -162,6 +162,6 @@ your fork.
 
     git push -f
 
-You can find great resources to learn git online. Some of the ready references 
-are [Official Git Book](http://git-scm.com/book), [Git immersion](http://gitimmersion.com/),
-[Code School - Try Git](http://try.github.io/)
+You can find great resources to learn git online.  
+Some of the ready references are [Official Git Book](http://git-scm.com/book),
+ [Git immersion](http://gitimmersion.com/), [Code School - Try Git](http://try.github.io/)
