@@ -24,24 +24,24 @@ Project Seva
   * Branch
   * Blood Group (Only if willing to donate)
   * Contact Details
-    * Email
-    * Phone
+    - Email
+    - Phone
   * Focus Areas
     The Focus Areas to be Listed in the forms of which each students gets to Opt In any three of their choices  
-    * Animals
-    * Arts and Culture
-    * Children
-    * Education
-    * Environment
-    * Health
-    * Human Rights
-    * Hunger
-    * Microfinance
-    * Women empowerment
+    - Animals
+    - Arts and Culture
+    - Children
+    - Education
+    - Environment
+    - Health
+    - Human Rights
+    - Hunger
+    - Microfinance
+    - Women empowerment
   Additionally have an opt domain that participants can mark (0 or more selection)
-  * Blood donation
-  * Disaster Management
-  * Organ Donation
+  - Blood donation
+  - Disaster Management
+  - Organ Donation
   Reminders of services they have already registered for
   New service requirements
 
