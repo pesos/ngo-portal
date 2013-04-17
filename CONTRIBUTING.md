@@ -1,6 +1,6 @@
 # How to Contribute
 
-There are many ways you can help contribute to pinax-project-account and the
+There are many ways you can help contribute to ngo-portal and the
 various apps, themes, and starter projects that it is made up of. Contributing
 code, writing documentation, reporting bugs, as well as reading and providing
 feedback on issues and pull requests, all are valid and necessary ways to
@@ -161,3 +161,7 @@ one entirely.) Save and exit will complete the rebase. Use a forced push to
 your fork.
 
     git push -f
+
+You can find great resources to learn git online. Some of the ready references 
+are [Official Git Book](http://git-scm.com/book), [Git immersion](http://gitimmersion.com/),
+[Code School - Try Git](http://try.github.io/)
