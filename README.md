@@ -5,12 +5,18 @@ The goal is to create a website for the iCare group to help out NGOs and volunte
 
 Completed:
 -----------
-1) Student registration form
+- Student registration form (forms.py)
 
 Todo:
 -----
 Please check the spec_sheet.docx for more information. It is still very vague, improving it with specific details would be the goal. If possible, convert it to plaintext (markdown?).
 There are few wireframes in the wireframes/ folder.
+- Check out the issues
+
+How to contribute:
+------------------
+You can probably check out the django docs at https://www.djangoproject.com/. This is an MVC (Model view controller) framework.
+For an example, check out forms.py that is used in views.py. Finally, configured in urls.py
 
 
 Setup:
