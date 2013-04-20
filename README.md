@@ -24,13 +24,15 @@ This installation guide assumes that the application is being installed on the l
 
 ## Author
 
-Sandeep Raju for
 The PES OpenSource Team
 
 
 ## License
 
+[MIT License](https://github.com/pesos/ngo-portal/blob/seva-flask/LICENSE.txt)
+
 
 ## Getting Started  
+
 1. Flask Tutorial - http://flask.pocoo.org/docs/quickstart/
 2. Flask Mega Tutorial - http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world  
