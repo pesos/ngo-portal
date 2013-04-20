@@ -51,7 +51,7 @@ DEBUG = True
 ## Contributing
 
 We love contributors! Clone the repository and start sending us pull requests...  
-For a list of things that we'd need help are in the [issues](https://github.com/pesos/ngo-portal/issues) section. That would be your starting point if you are looking to contribute to this project! If you need help in getting started, ping us on #pes-os on IRC (freenode). Look at the Getting Started section for some tutorials and resources to get you started quickly.
+For a list of things that we'd need help check out the [issues](https://github.com/pesos/ngo-portal/issues) section. That would be your starting point if you are looking to contribute to this project! If you need help in getting started, ping us on #pes-os on IRC (freenode). Look at the Getting Started section for some tutorials and resources to get you started quickly.
 
 Happy hacking!
 
