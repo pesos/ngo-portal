@@ -1,0 +1,42 @@
+# Mode
+DEVELOPMENT = True
+DEBUG = True
+
+# Title of the site
+SITE_TITLE = ""
+
+# Site Domain
+DOMAIN_NAME = ""
+
+# HTTPS Settings
+ENABLE_HTTPS = False
+
+# Google analytics code UA-XXXXXX-X
+GA_CODE = ""
+
+# Secret key
+SECRET_KEY = "secret key here"
+
+# Timezone
+TIMEZONE = "Asia/Calcutta"
+
+# Application Settings
+APPLICATION_HOST = "127.0.0.1"
+APPLICATION_PORT = 5000
+
+# Admins
+ADMINS = ["pesos@pes.edu"]
+
+# Logging
+ENABLE_LOGGING = False
+
+# Database Settings
+DB_TYPE = ""
+DB_HOST = ""
+DB_USER = ""
+DB_PASSWORD = ""
+DB_NAME = ""
+SQLALCHEMY_DATABASE_URI = "%s://%s:%s@%s/%s" % (DB_TYPE, DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
+
+# Flask Web Assets Settings
+ASSETS_DEBUG = True

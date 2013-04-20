@@ -1,0 +1,9 @@
+Flask==0.9
+Flask-Assets==0.8
+Flask-SQLAlchemy==0.16
+Jinja2==2.6
+SQLAlchemy==0.8.0
+Werkzeug==0.8.3
+argparse==1.2.1
+webassets==0.8
+wsgiref==0.1.2

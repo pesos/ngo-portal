@@ -1,0 +1,4 @@
+*.py[co]
+*~
+tmp/
+core/settings.py
