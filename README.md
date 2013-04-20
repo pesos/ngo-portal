@@ -1,4 +1,4 @@
-shfl
+Project Seva
 ===
 
 ## Installation
@@ -30,3 +30,7 @@ The PES OpenSource Team
 
 ## License
 
+
+## Getting Started  
+1. Flask Tutorial - http://flask.pocoo.org/docs/quickstart/
+2. Flask Mega Tutorial - http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world  
