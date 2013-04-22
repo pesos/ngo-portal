@@ -48,6 +48,16 @@ DEBUG = True
 5. Go to `src/` and run the application using, `python run.py` and point your browser to the url that gets displayed.
 
 
+## Coding Standard
+
+We follow the [official Python coding standards (PEP8)](http://www.python.org/dev/peps/pep-0008/) where ever possible. As a quick round up of it,
+
+1. Use 4 spaces for indentation and not tabs.
+2. Make sure you maintain maximum around 80 characters per line of code.
+3. Variable & Class names follow `CamelCase` notation with the exceptions of function names / model's datamembers which follow `under_score` notation.
+4. Finally, make sure the code you write is readable and maintanable with a fair amount of relevant comments.
+
+
 ## Contributing
 
 We love contributors! Clone the repository and start sending us pull requests...  
