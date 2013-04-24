@@ -33,9 +33,9 @@ DEBUG = True
 
 ### Setting up the Database
 
-1. Create a `database` with any name you wish.
+1. Create a database with any name you wish.
 2. Then change directory to `src/core` using `cd src/core`
-3. Run the following command to update the schema from alembic version files using the command, `alembic upgrade head`
+3. Update the schema from alembic version files using the command, `alembic upgrade head`
 4. When you edit the schema and want to sync it to the database, go to `src/core` and run the command `alembic revision --autogenerate -m "<revision_message_here>"`. Here the revision message is a simple short line telling what was changed just like a git commit message. Then run, `alembic upgrade head`
 
 
@@ -43,8 +43,8 @@ DEBUG = True
 
 1. Rename the `settings.py.sample` using the command, `mv settings.py.sample setting.py`
 2. Make appropriate settings in `settings.py`
-3. Run the migrations as mentioned in the previous section.
-4. Go to `src/scripts` and run `source dev.sh`.
+3. Go to `src/scripts` and run `source dev.sh`.
+4. Run the migrations as mentioned in the previous section.
 5. Go to `src/` and run the application using, `python run.py` and point your browser to the url that gets displayed.
 
 
@@ -55,12 +55,12 @@ We follow the [official Python coding standards (PEP8)](http://www.python.org/de
 1. Use 4 spaces for indentation and not tabs.
 2. Make sure you maintain maximum around 80 characters per line of code.
 3. Variable & Class names follow `CamelCase` notation with the exceptions of function names / model's datamembers which follow `under_score` notation.
-4. Finally, make sure the code you write is readable and maintanable with a fair amount of relevant comments.
+4. Finally, make sure the code you write is readable and maintainable with a fair amount of relevant comments.
 
 
 ## Contributing
 
-We love contributors! Clone the repository and start sending us pull requests...  
+We love contributors! Fork the repository and start sending us pull requests...  
 For a list of things that we'd need help check out the [issues](https://github.com/pesos/ngo-portal/issues) section. That would be your starting point if you are looking to contribute to this project! If you need help in getting started, ping us on #pes-os on IRC (freenode). Look at the Getting Started section for some tutorials and resources to get you started quickly.
 
 Happy hacking!
