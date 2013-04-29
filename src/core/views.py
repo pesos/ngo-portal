@@ -10,10 +10,45 @@ import json
 from flask import render_template, jsonify, request
 
 # Application homepage
+@app.route('/index')
 @app.route("/")
 def index():
     return render_template("index.html")
 
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'GET':
+        return render_template("signup.html")
+    elif request.method == 'POST':
+        return render_template("register.html")
+
+@app.route('/copyright')
+def copyright():
+    return "Copyright Message Here"
+
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
+@app.route('/gallery')
+def gallery():
+    return render_template("gallery.html")
+
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
+
+@app.route("/partners")
+def partners():
+    return render_template("partners.html")
+
+@app.route("/support")
+def support():
+    return render_template("support.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 # Application error handlers
 @app.errorhandler(400)

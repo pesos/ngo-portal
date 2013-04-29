@@ -1,4 +1,4 @@
-from  . import db
+from . import db
 from sqlalchemy import ForeignKey
 from sqlalchemy import Table, Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship, backref
