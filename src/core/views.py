@@ -5,7 +5,7 @@ import helpers as util
 
 # Standard python imports
 import json
-
+from models import *
 # Third party imports
 from flask import render_template, jsonify, request
 
@@ -20,7 +20,10 @@ def signup():
     if request.method == 'GET':
         return render_template("signup.html")
     elif request.method == 'POST':
-        return render_template("register.html")
+        user = User(request.form['first_name'], request.form['last_name'], request.form['date_of_birth'], request.form['college'], request.form['year_of_study'], request.form['branch'], request.form['blood_group'], request.form['email'], request.form['news'], request.form['phone'], request.form['address'], request.form['facebook'], request.form['linkedin'], request.form['twitter'], request.form['google'], request.form['pintrest'], request.form['role'],request.form['blood'],request.form['organ'],request.form['disaster'])
+        db.session.add(user)
+        db.session.commit()
+        return render_template("register.html", user.first_name)
 
 @app.route('/copyright')
 def copyright():

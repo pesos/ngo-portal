@@ -15,6 +15,7 @@ class User(db.Model):
     """
     __tablename__ = "user"
     id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(255), nullable=False)
     first_name = db.Column(db.String(255), nullable=False)
     last_name = db.Column(db.String(255),nullable=False)
     date_of_birth = db.Column(db.Integer)
@@ -36,6 +37,29 @@ class User(db.Model):
     organ = db.Column(db.Boolean)
     disaster = db.Column(db.Boolean)
 	
+    def __init__(self, username, first_name, last_name, date_of_birth, college, year_of_study, branch, blood_group, email, news, phone, address, facebook, linkedin, twitter, google, pintrest, role, blood, organ, disaster):
+        self.username = username
+        self.first_name =first_name
+        self.last_name = last_name
+        self.date_of_birth = date_of_birth
+        self.college = college
+        self.year_of_study = year_of_study
+        self.branch = branch
+        self.blood_group = blood_group
+        self.email = email
+        self.news = news
+        self.phone = phone
+        self.address = address
+        self.facebook = facebook
+        self.linkedin = linkedin
+        self.twitter = twitter
+        self.google = google
+        self.pintrest = pintrest
+        self.role = role
+        self.blood = blood
+        self.organ = organ
+        self.disaster = disaster
+
     def __repr__(self):
         return "<User:%r:%r>" % (self.id , self.name,self.email,self.role)
 
@@ -44,6 +68,7 @@ class Organisation(db.Model):
     """Organisation` is any entity which uses the application."""
     __tablename__ = "organisation"
     id = db.Column(db.Integer, primary_key=True)
+    orgname = db.Column(db.String(255), nullable=False) 
     name = db.Column(db.String(255), nullable=False)
     yer_es=db.Column(db.Integer(255),nullable=False)
     focus=db.Column(db.String(255),nullable=False)
@@ -67,6 +92,32 @@ class Organisation(db.Model):
     dis_stationary=db.Column(db.Boolean)
     dis_software=db.Column(db.Boolean)
     dis_hardware=db.Column(db.Boolean)
+
+    def __init__(self, orgname, name, yer_es, focus, about, reg_adr, cor_adr, contact_name, contact_des, icare_phone, icare_mobile, icare_fax, website, icare_email, social, skills_based, micro, areaofwork, community, intl_camp, dis_hr, dis_stationary, dis_software, dis_hardware):
+        self.orgname = orgname
+        self.name = name
+        self.yer_es =yer_es
+        self.focus =focus
+        self.about = about
+        self.reg_adr = reg_adr
+        self.cor_adr = cor_adr
+        self.contact_name = contact_name
+        self.contact_des = contact_des
+        self.icare_phone = icare_phone
+        self.icare_mobile = icare_mobile
+        self.icare_fax = icare_fax
+        self.website = website
+        self.icare_email = icare_email
+        self.social = social
+        self.skills_based = skills_based
+        self.micro = micro
+        self.areaofwork = areaofwork
+        self.community = community
+        self.intl_camp = intl_camp
+        self.dis_hr = dis_hr
+        self.dis_stationary = dis_stationary
+        self.dis_software = dis_software
+        self.dis_hardware = dis_hardware        
 
     def __repr__(self):
         return "<Organisation:%r:%r>" % (self.id , self.name,self.website,self.email)
