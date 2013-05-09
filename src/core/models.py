@@ -9,6 +9,12 @@ Base = declarative_base()
 # Application models
 ROLE_STUDENT = 0
 ROLE_ADMIN = 1
+
+user_focus = db.Table('user_focus',
+    db.Column('user_id', db.Integer, db.ForeignKey('user.id')),
+    db.Column('focus_id', db.Integer, db.ForeignKey('focus.id'))
+)
+
 class User(db.Model):
     """ `User` is any entity which uses the application. User will
     have a valid facebook account to access the application.
@@ -35,10 +41,15 @@ class User(db.Model):
     blood = db.Column(db.Boolean)
     organ = db.Column(db.Boolean)
     disaster = db.Column(db.Boolean)
+    focus = db.relationship('Focus', secondary=user_focus, backref=db.backref('users', lazy='dynamic'))
 	
     def __repr__(self):
         return "<User:%r:%r>" % (self.id , self.name,self.email,self.role)
 
+org_focus = db.Table('org_focus',
+    db.Column('org_id', db.Integer, db.ForeignKey('organisation.id')),
+    db.Column('focus_id', db.Integer, db.ForeignKey('focus.id'))
+)
 
 class Organisation(db.Model):
     """Organisation` is any entity which uses the application."""
@@ -67,6 +78,7 @@ class Organisation(db.Model):
     dis_stationary=db.Column(db.Boolean)
     dis_software=db.Column(db.Boolean)
     dis_hardware=db.Column(db.Boolean)
+    focus = db.relationship('Focus', secondary=org_focus, backref=db.backref('organisations', lazy='dynamic'))
 
     def __repr__(self):
         return "<Organisation:%r:%r>" % (self.id , self.name,self.website,self.email)
@@ -82,22 +94,4 @@ class FocusAreas(db.Model):
           return "<FocusAreas:%r:%r>" % (self.id,self.interest_name)
 
 
-class UserFocus(db.Model):
-     """'UserFocus' relates users to their interests"""
-     __tablename__ = "userfocus"
-     id=db.Column(db.Integer,db.ForeignKey("user.id"),primary_key=True)
-     focus_id=db.Column(db.Integer,db.ForeignKey("focus.id"),primary_key=True)
-     
-     def __repr__(self):
-          return "<UserFocus:%r:%r>" % (self.id,self.focus_id)
-
-
-class OrgFocus(db.Model):
-     """'UserFocus' relates users to their interests"""
-     __tablename__ = "orgfocus"
-     id=db.Column(db.Integer,db.ForeignKey("organisation.id"),primary_key=True)
-     focus_id=db.Column(db.Integer,db.ForeignKey("focus.id"),primary_key=True)
-
-     def __repr__(self):
-          return "<OrgFocus:%r:%r>" % (self.id,self.focus_id)
 
