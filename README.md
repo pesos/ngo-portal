@@ -82,6 +82,7 @@ List of Contributors (In alphabetical order)
 1. [Akshay MS](https://github.com/akshayms)
 2. [Sandeep Raju P](https://github.com/sandeepraju)
 3. [Vidhisha Nair](https://github.com/vidhishanair)
+4. [Shruthi Chari](https://github.com/ShruthiChari)
 
 
 ## License
