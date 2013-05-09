@@ -3,4 +3,5 @@
 tmp/
 core/settings.py
 core/build
+core/migrations/
 
